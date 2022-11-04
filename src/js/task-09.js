@@ -9,9 +9,7 @@ console.log(bodyEl);
 
 
 function onButtonChange (event) {
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  spanEl.textContent =  getRandomHexColor();
-
+  bodyEl.style.backgroundColor = spanEl.textContent =  getRandomHexColor();
 };
 
 buttonChange.addEventListener(`click`, onButtonChange)
