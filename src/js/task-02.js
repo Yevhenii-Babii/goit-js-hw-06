@@ -13,7 +13,9 @@ const products = ingredients.forEach((el)=> {
 const productsLi = document.createElement(`li`)
 productsLi.textContent = el;
 productsLi.classList.add(`item`)
-// console.log(productsLi);
-array.append(productsLi)
+const arrayGeneral = [];
+arrayGeneral.push(productsLi);
+array.append(...arrayGeneral)
 })
+
 console.log(array);

@@ -15,7 +15,7 @@ const images = [
 
 
 const galleryEl = ({ url, alt }) =>
-  `<li> <img src="${url}" alt="${alt}" width = 300 height = 200> </li>`;
+  `<li> <img src="${url}" alt="${alt}" width="300" height="200"> </li>`;
 const galleryNote = images.reduce((acc, el) => acc + galleryEl(el),"");
 
 
